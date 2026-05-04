@@ -1,0 +1,14 @@
+name: hermes-plugin-hindsight-mental-models
+kind: standalone
+version: 0.1.0
+description: Direct lookup tools for Hindsight mental models.
+author: simens_green
+
+provides_tools:
+  - hindsight_get_mental_model
+  - hindsight_list_mental_models
+
+requires_env:
+  - name: HINDSIGHT_API_URL
+    description: "Base URL of your Hindsight API (scheme and host, no trailing slash)."
+    secret: false
